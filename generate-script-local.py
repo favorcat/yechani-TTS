@@ -41,10 +41,10 @@ for folder in folder_list:
         output_dir = os.path.join(folder_dir,'output/')
         
         file_list = os.listdir(output_dir)
-        file_list.sort()
+        file_len = len(file_list)
 
-        for file in file_list:
+        for i in range(file_len) :
             # gs://~ 는 버킷 내부의 오디오 데이터 경로
-            transcribe_file(folder_dir, output_dir+file)
+            transcribe_file(folder_dir, output_dir+str(i)+".wav")
     
 # 오류 발생시 https://cloud.google.com/speech-to-text/docs/error-messages 참조
