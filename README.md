@@ -38,3 +38,6 @@
 - [DJ You project](https://welcome-to-dewy-world.tistory.com/106?category=850079)
 - [시리를 아이유 목소리로 바꾸기](https://blog.crux.cx/iu-siri-1/)
 - https://hleecaster.com/google-cloud-speech-to-text-api/
+
+## 사용 데이터
+- [210213 브이앱 라이브](https://www.vlive.tv/video/236796)
