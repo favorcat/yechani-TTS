@@ -56,5 +56,16 @@
 - https://hleecaster.com/google-cloud-speech-to-text-api/
 
 ## 사용 데이터
-- [210213 브이앱 라이브](https://www.vlive.tv/video/236796)
 - [KSS dataset](https://www.kaggle.com/bryanpark/korean-single-speaker-speech-dataset)
+
+- [201108 인스타 라이브](https://youtu.be/TxSoAYf-diI)
+
+- [210131 인스타 라이브](https://youtu.be/FIIBlRX2WHA)
+- [210213 브이앱 라이브](https://www.vlive.tv/video/236796)
+- [211206 인스타 라이브](https://youtu.be/ZIi28sEYrhE)
+- [211212 인스타 라이브](https://youtu.be/d9GPc-VPvfI)
+
+- [220116 인스타 라이브](https://youtu.be/NGjG2jA_xXM)
+- [220126 인스타 라이브](https://youtu.be/zVq8L9NOsI4)
+- [220206 인스타 라이브](https://youtu.be/-BD9NXSzKTw)
+- [220227 인스타 라이브](https://youtu.be/NET4D6qniCI)
