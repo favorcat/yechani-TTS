@@ -38,7 +38,13 @@
 - `ModuleNotFoundError: No module named 'pandas'`
     - anaconda3로 python 3.7를 설치하고 했음에도 이 오류가 떴다.
     - `pip3 install --upgrade pandas` 를 하면 재설치가 된다.
-
+- `google.api_core.exceptions.InvalidArgument: 400 Request payload size exceeds the limit: 10485760 bytes.`
+    - 구글 STT API 사용할 때, 로컬 파일로 스크립트 작성 중에 마주한 오류
+    - [참고한 오류 해결법](https://st-yuri.medium.com/set-up-and-use-speech-to-text-api-in-python-78f1a0be167e)
+    - 로컬 파일을 Google Cloud Platform에 업로드 후, 해당 경로를 통해 스크립트 파일을 만들면 된다.
+- [chldkato/Tacotron-Korean-Tensorflow2](https://github.com/chldkato/Tacotron-Korean-Tensorflow2) 코드 실행 시, `librosa` 등의 라이브러리 오류
+    - M1 맥북으로 할 때, 파이썬 3.7은 아키텍쳐로 인해 깔리지 않는다는 여러 구글링을 통해, 파이썬 3.8은 되나? 싶어서 도전했더니 `pandas`오류인지를 만났다.
+    - 결국엔 윈도우 데스크탑에 `anaconda3`로 파이썬3.7으로 맞춰주니 정상적으로 `preprocess.py`를 실행할 수 있었다.
 ## 참조
 - DEVIEW 2017 김태훈님 발표
     - [영상](https://youtu.be/klnfWhPGPRs) 및 [PPT](https://www.slideshare.net/carpedm20/deview-2017-80824162)
