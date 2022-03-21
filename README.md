@@ -42,6 +42,9 @@
     - 구글 STT API 사용할 때, 로컬 파일로 스크립트 작성 중에 마주한 오류
     - [참고한 오류 해결법](https://st-yuri.medium.com/set-up-and-use-speech-to-text-api-in-python-78f1a0be167e)
     - 로컬 파일을 Google Cloud Platform에 업로드 후, 해당 경로를 통해 스크립트 파일을 만들면 된다.
+- `google.api_core.exceptions.InvalidArgument: 400 Sync input too long. For audio longer than 1 min use LongRunningRecognize with a 'uri' parameter.`
+    - 동기식 음성 인식을 이용할 경우 1분보다 긴 음성을 요청할 때, 이런 오류가 반환된다. [참조](https://cloud.google.com/speech-to-text/docs/error-messages)
+    - [비동기 음성 인식](https://cloud.google.com/speech-to-text/docs/async-recognize)을 사용하여 반환하면 해결된다.
 - [chldkato/Tacotron-Korean-Tensorflow2](https://github.com/chldkato/Tacotron-Korean-Tensorflow2) 코드 실행 시, `librosa` 등의 라이브러리 오류
     - M1 맥북으로 할 때, 파이썬 3.7은 아키텍쳐로 인해 깔리지 않는다는 여러 구글링을 통해, 파이썬 3.8은 되나? 싶어서 도전했더니 `pandas`오류인지를 만났다.
     - 결국엔 윈도우 데스크탑에 `anaconda3`로 파이썬3.7으로 맞춰주니 정상적으로 `preprocess.py`를 실행할 수 있었다.

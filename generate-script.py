@@ -15,7 +15,12 @@ def transcribe_gcs(gcs_uri):
         audio_channel_count=2,
         enable_separate_recognition_per_channel=False)
 
+    # 동기식 방법 https://cloud.google.com/speech-to-text/docs/sync-recognize
     response = client.recognize(config=config, audio=audio)
+    
+    # 비동기식 방법 https://cloud.google.com/speech-to-text/docs/async-recognize
+    # operation = client.long_running_recognize(config=config, audio=audio)
+    # response = operation.result(timeout=90)
     
     # json 파일에 내용추가
     with open("/Users/favorcat/Github/yechani-TTS/script.json", "a") as script:
