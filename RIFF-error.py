@@ -12,5 +12,5 @@ for folder in folder_list:
         file_list.sort()
         
         for file in file_list:
-            command = "ffmpeg -i {} -acodec pcm_s16le -ac 1 -ar 16000 {}".format(os.path.join(path_dir,file), os.path.join(path_dir,"RIFF-ID/",file))
+            command = "ffmpeg -i {} -acodec pcm_s16le -ac 1 -ar 16000 {}".format(os.path.join(output_dir,file), os.path.join(path_dir,folder,"RIFF-ID/",file))
             subprocess.call(command, shell=True)
